@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FontTextView">
+        <attr name="font_name" format="enum">
+            <enum name="Roboto" value="0" />
+            <enum name="SourceHanSansCN" value="1" />
+        </attr>
+        <attr name="font_weight" format="enum">
+            <enum name="regular_400" value="400" />
+            <enum name="medium_500" value="500" />
+            <enum name="bold_700" value="700" />
+        </attr>
+        <attr name="font_padding" format="boolean" />
+        <attr name="line_height" format="dimension" />
+    </declare-styleable>
+</resources>
