@@ -22,7 +22,7 @@ public class FontHelper {
      */
     private static final Map<String, String> fontMap = new ArrayMap<>();
 
-    private static FontHelper instance;
+    private static volatile FontHelper instance;
 
     private FontHelper() {
         fontMap.put("0_400", "fonts/Roboto/Roboto-Regular.ttf");
