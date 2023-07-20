@@ -59,7 +59,12 @@ public class FontHelper {
         String fontPath = fontMap.get(name + "_" + weight);
         if (!TextUtils.isEmpty(fontPath)) {
             Typeface typeface = createTypefaceFromAsset(textView.getContext(), fontPath);
-            textView.setTypeface(typeface);
+            Typeface currentFace = textView.getTypeface();
+            int style = Typeface.NORMAL;
+            if (currentFace != null) {
+                style = currentFace.getStyle();
+            }
+            textView.setTypeface(typeface, style);
         }
     }
 }
